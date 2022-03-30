@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+    <title>Add Member</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card mt-5">
+            <div class="card-header">
+                <h5>Add Family Member</h5>
+            </div>
+            <div class="card-body">
+                <form class="row g-3" id="family-member-form">
+
+                    <div class="row" id="row1">
+                        <h5>Family Member Details</h5>
+                        <div class="col-md-1">
+                            <label for="inputSirname" class="form-label">Title</label>
+                            <select id="inputSirname" name="title1" class="form-select">
+                                <option selected>Title</option>
+                                <option>Mr.</option>
+                                <option>Mrs.</option>
+                                <option>Miss.</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputFirstname" class="form-label">First Name</label>
+                            <input type="name" name="firstName1" class="form-control" id="inputFirstname"
+                                placeholder="Enter first name">
+                        </div>
+                        <div class="col-md-5">
+                            <label for="inputSecondName" class="form-label">Last Name</label>
+                            <input type="name" name="lastName1" class="form-control" id="inputSecondName"
+                                placeholder="Enter last name">
+                        </div>
+
+                        <div class="col-md-12">
+                            <label for="inputFirstname" class="form-label">Father/Husband Name</label>
+                            <input type="name" name="fathername1" class="form-control" id="inputFirstname"
+                                placeholder="First name">
+                        </div>
+
+                        <div class="col-md-12">
+                            <label for="inputFirstname" class="form-label">Mothers Name</label>
+                            <input type="name" name="mothername1" class="form-control" id="inputFirstname"
+                                placeholder="First name">
+                        </div>
+                        <div class="col-12">
+                            <label for="inputcontact" class="form-label">Contact Number</label>
+                            <input type="number" name="contact1" class="form-control" id="inputcontact"
+                                placeholder="Enter your mobile number">
+                        </div>
+                        <div class="col-12">
+                            <label for="inputemail" class="form-label">Email</label>
+                            <input type="text" name="email1" class="form-control" id="inputemail"
+                                placeholder="Enter your email">
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="inputCity" class="form-label">Date of Birth</label>
+                            <select id="inputCity" class="form-select" name="dob1">
+                                <option selected>Enter Date of birth</option>
+
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputState" class="form-label">Blood Group</label>
+                            <select id="inputState" class="form-select" name="bg1">
+                                <option selected>Select BloodGroup</option>
+                                <option>A</option>
+                                <option>B</option>
+                                <option>C</option>
+                            </select>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="inputCity" class="form-label">Date of Marriage</label>
+                            <select id="inputCity" class="form-select" name="dom1">
+                                <option selected>Enter Date of Marriage</option>
+
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputState" class="form-label">Gender</label>
+                            <select id="inputState" class="form-select" name="gender1">
+                                <option selected>Select Gender</option>
+                                <option>Male</option>
+                                <option>Female</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+
+                        <div class="col-md-8">
+                            <label for="inputState" class="form-label">Aadhar Number</label>
+                            <input type="number" class="form-control" name="aadhar1" id="inputAadhar"
+                                placeholder="Enter Aadhar Number">
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="inputFirstname" class="form-label">Highest Qualification</label>
+                            <select id="inputQualification" class="form-select" name="hq1">
+                                <option selected>Select Qualification</option>
+                                <option>Primary</option>
+                                <option>Secondary</option>
+                                <option>Graduate</option>
+                                <option>Post-graduate</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputFirstname" class="form-label">Details</label>
+                            <input type="name" name="details1" class="form-control" id="inputFirstname"
+                                placeholder="Qualification Details">
+                        </div>
+
+
+                        <div class="occupation_text"
+                            style="display: inline-flex; justify-content: center; margin-top: 5vh;">
+                            <span>
+                                <h3><b>Occupation Details:</b></h3>
+                            </span>
+                        </div>
+
+                        <div class="col-md-8">
+                            <label for="inputWork" class="form-label">Type of Work</label>
+                            <select id="inputWork" name="tow1" class="form-select">
+                                <option selected>Select Work Type</option>
+                                <option>Businessman</option>
+                                <option>Service Provider</option>
+                                <option>Professional</option>
+                                <option>Shop Owner</option>
+                            </select>
+                        </div>
+                        <div class="col-md-8">
+                            <label for="inputOccupation" class="form-label">Occupation</label>
+                            <select id="inputOccupation" name="occupation1" class="form-select">
+                                <option selected>Occupation</option>
+                                <option>Whole Seller</option>
+                                <option>Retailer</option>
+                                <option>Manufacturer</option>
+                                <option>Distrubuter</option>
+                            </select>
+                        </div>
+                        <div class="col-md-8">
+                            <label for="inputState" class="form-label">Details</label>
+                            <input type="textarea" name="occupationdetails1" class="form-control"
+                                id="inputOccupationdetails" placeholder="Enter Details">
+                        </div>
+
+
+                        <div class="col-12">
+                            <label for="inputAddress" class="form-label">Residential Address</label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="Addressline 1"
+                                name="ad1">
+                            <br>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="Addressline 2"
+                                name="ad2">
+                        </div>
+                        <div class="col-md-3">
+                            <label for="inputCity" class="form-label">Village/Area</label>
+                            <select id="inputCity" class="form-select" name="village1">
+                                <option selected>Select</option>
+                                <option>State 1</option>
+                                <option>State 2</option>
+                                <option>State 3</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3">
+                            <label for="inputState" class="form-label">District</label>
+                            <select id="inputState" class="form-select" name="district1">
+                                <option selected>Select</option>
+                                <option>State 1</option>
+                                <option>State 2</option>
+                                <option>State 3</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3">
+                            <label for="inputState" class="form-label">Tehsil</label>
+                            <select id="inputState" class="form-select" name="tehsil1">
+                                <option selected>Select</option>
+                                <option>State 1</option>
+                                <option>State 2</option>
+                                <option>State 3</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3">
+                            <label for="inputPinCode" class="form-label">Pin Code</label>
+                            <select id="inputPinCode" class="form-select" name="pincode1">
+                                <option selected>Select Pincode</option>
+                                <option>Pincode 1</option>
+                                <option>Pincode 2</option>
+                                <option>Pincode 3</option>
+                            </select>
+                        </div>
+
+                        <button style="display: none;" class="btn btn-danger float-right mt-2" id=" "
+                            onclick="remove(this)">Delete Member -</button>
+                    </div>
+                    <hr>
+                </form>
+                <button class="btn btn-dark float-right mt-2" onclick="add_more_field()">Add Member +</button>
+                <button class="btn btn-dark float-right mt-2" style="float: right;">Submit</button>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    <script src="form.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
